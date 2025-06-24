@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-electric to-purple;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-lg relative;
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.2);
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #00b4ff, #6200ea);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .btn:hover::before {
+    opacity: 0.5;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 30px rgba(0, 180, 255, 0.4),
+                0 0 60px rgba(0, 180, 255, 0.2),
+                0 0 90px rgba(0, 180, 255, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-electric to-purple text-white relative overflow-hidden;
+    box-shadow: 0 0 25px rgba(0, 180, 255, 0.4),
+                0 0 50px rgba(0, 180, 255, 0.2);
+  }
+
+  .btn-primary:hover {
+    @apply from-electric-light to-purple-light;
+    box-shadow: 0 0 40px rgba(0, 180, 255, 0.6),
+                0 0 80px rgba(0, 180, 255, 0.3),
+                0 0 120px rgba(0, 180, 255, 0.1);
+  }
+
+  .btn-secondary {
+    @apply border-2 border-electric text-electric relative;
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.3);
+  }
+
+  .btn-secondary:hover {
+    @apply bg-electric/10;
+    box-shadow: 0 0 35px rgba(0, 180, 255, 0.5),
+                0 0 70px rgba(0, 180, 255, 0.2);
+  }
+
+  .card {
+    @apply bg-black backdrop-blur-sm rounded-xl p-6 border border-dark-300/50;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 
+           bg-clip-text text-transparent bg-gradient-to-r from-electric to-purple;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    .btn {
+      @apply text-base px-4 py-2;
+    }
+    
+    .card {
+      @apply p-4;
+    }
+  }
+}
