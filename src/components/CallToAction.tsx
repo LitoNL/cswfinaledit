@@ -23,7 +23,7 @@ const CallToAction: React.FC = () => {
               </p>
               <p>
                 Got questions? Want to see how the AI assistant works?<br className="hidden sm:block" />
-                Let's have a quick chat. No tech talk, no pushy sales stuff.
+                Let's have a quick chat. No pressure, no pushy sales talk.
               </p>
             </div>
             <div className="flex flex-col items-center">
