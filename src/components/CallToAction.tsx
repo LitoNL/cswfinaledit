@@ -14,7 +14,7 @@ const CallToAction: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
-              Let's Chat. No Pressure
+              Let's Chat. No Pressure.
             </h2>
             <div className="space-y-6 text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               <p>
