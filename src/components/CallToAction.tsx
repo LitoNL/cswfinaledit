@@ -16,7 +16,7 @@ const CallToAction: React.FC = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
               Let's Chat. No Pressure.
             </h2>
-            <div className="space-y-8 text-lg text-white max-w-2xl mx-auto mb-8 leading-relaxed p-5">
+            <div className="space-y-8 text-base sm:text-lg text-white max-w-2xl mx-auto mb-8 leading-relaxed p-5">
               <p>
                 Running a spa or wellness center is already a lot of work. We're here to make your life easier, not harder.
               </p>
