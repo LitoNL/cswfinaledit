@@ -18,11 +18,11 @@ const CallToAction: React.FC = () => {
             </h2>
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               <p>
-                Running a spa or wellness center is already a lot of work.<br className="hidden sm:block" />
+                Running a spa or wellness center is already a lot of work.<br />
                 We're here to make your life easier, not harder.
               </p>
               <p>
-                Got questions? Want to see how the AI assistant works?<br className="hidden sm:block" />
+                Got questions? Want to see how the AI assistant works?<br />
                 Let's have a quick chat. No pressure, no pushy sales talk.
               </p>
             </div>
