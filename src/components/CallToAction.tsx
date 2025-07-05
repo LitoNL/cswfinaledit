@@ -22,7 +22,9 @@ const CallToAction: React.FC = () => {
                 We're here to make your life easier, not harder.
               </p>
               <p>
-                Got questions? Want to see how the AI assistant works?<br className="hidden sm:block" />
+                Got questions? Want to see how the AI assistant works?
+              </p>
+              <p>
                 Let's have a quick chat. No pressure, no pushy sales talk.
               </p>
             </div>
