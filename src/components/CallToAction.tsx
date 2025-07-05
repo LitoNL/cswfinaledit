@@ -22,9 +22,7 @@ const CallToAction: React.FC = () => {
                 We're here to make your life easier, not harder.
               </p>
               <p>
-                Got questions? Want to see how the AI assistant works?
-              </p>
-              <p>
+                Got questions? Want to see how the AI assistant works?<br className="hidden sm:block" />
                 Let's have a quick chat. No pressure, no pushy sales talk.
               </p>
             </div>
@@ -40,11 +38,11 @@ const CallToAction: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Background elements */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-purple/5 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-electric/5 to-transparent"></div>
       </div>
-      
-      {/* Background elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-purple/5 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-electric/5 to-transparent"></div>
     </section>
   );
 };
